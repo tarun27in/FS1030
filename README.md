@@ -1,9 +1,7 @@
 # FS1030
-NodeJS-MYSQL Example
-
-One of the cleanest example of using MySQL-NodeJS-ExpressJS integration.
-
-Credits: https://dev.to/achowba/build-a-simple-app-using-node-js-and-mysql-19me
+NodeJS-ExpressJS-MYSQL Example
+Good example of using MySQL-NodeJS-ExpressJS integration.
+Credits: Atauba Prince, https://dev.to/achowba/build-a-simple-app-using-node-js-and-mysql-19me
 
 ## MYSQL Script
 
