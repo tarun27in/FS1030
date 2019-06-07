@@ -7,7 +7,8 @@ Credits: https://dev.to/achowba/build-a-simple-app-using-node-js-and-mysql-19me
 
 ## MYSQL Script
 
-```CREATE DATABASE socka;
+```
+CREATE DATABASE socka;
 CREATE TABLE IF NOT EXISTS `players` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(255) NOT NULL,
