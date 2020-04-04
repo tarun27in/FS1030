@@ -29,7 +29,7 @@ npm install express express-fileupload body-parser mysql ejs req-flash --save
 Install nodemon globally
 
 ```
-npm install nodemon -g
+npm install nodemon
 ```
 
 Start the app, opens the app at http://localhost:5000
@@ -54,3 +54,14 @@ CREATE TABLE IF NOT EXISTS `players` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 ```
+
+```
+Run the below commands on your workbench or mysql command line to create a new user for node app
+
+```
+USE mysql;
+CREATE USER 'nodeclient'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
+GRANT ALL PRIVILEGES ON * . * TO 'nodeclient'@'localhost';
+flush privileges;
+```
+
