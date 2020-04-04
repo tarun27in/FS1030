@@ -9,19 +9,20 @@ var mycon = mysql.createConnection({
 
 mycon.connect(function(err) {
     if (err) throw err;
-    console.log("Connected!");
-    // mycon.query("SELECT * FROM clients", function (err, result, fields) {
-    //     if (err) throw err;
-    //     console.log(result);
-    //   });
+    //console.log("Print All");
+    mycon.query("SELECT * FROM clients", function (err, result, fields) {
+        if (err) throw err;
+        console.log(result);
+      });
     
-    // Select specific value from results
-    // mycon.query("SELECT * FROM clients", function (err, result, fields) {
-    //     if (err) throw err;
-    //     console.log(result[2].address);
-    //   }); 
+    //console.log ('Select specific value from results')
+    mycon.query("SELECT * FROM clients", function (err, result, fields) {
+        if (err) throw err;
+        console.log(result[2].address);
+      }); 
     
     //Field values
+    //console.log ('Print Columns')
     mycon.query("SELECT * FROM clients", function (err, result, fields) {
         if (err) throw err;
         console.log(fields);
