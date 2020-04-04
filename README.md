@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `players` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
 ```
 
-```
+
 Run the below commands on your workbench or mysql command line to create a new user for node app
 
 ```
