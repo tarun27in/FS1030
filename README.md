@@ -32,12 +32,13 @@ Install nodemon globally
 npm install nodemon
 ```
 
-Start the app, opens the app at http://localhost:5000
+Start the app (make sure mysql scripts below are run before the next command)
 
 ```
 nodemon app.js
 ```
 
+Open the browser and browse at http://localhost:5000
 
 ## MYSQL Script
 
