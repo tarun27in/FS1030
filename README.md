@@ -29,7 +29,7 @@ npm install express express-fileupload body-parser mysql ejs req-flash --save
 Install nodemon globally
 
 ```
-npm install nodemon
+npm install nodemon -g
 ```
 
 Start the app (make sure mysql scripts below are run before the next command)
@@ -37,6 +37,13 @@ Start the app (make sure mysql scripts below are run before the next command)
 ```
 nodemon app.js
 ```
+
+If nodemon does not work please start the script by 
+
+```
+node app.js
+```
+
 
 Open the browser and browse at http://localhost:5000
 
@@ -62,7 +69,7 @@ Run the below commands on your workbench or mysql command line to create a new u
 ```
 USE mysql;
 CREATE USER 'nodeclient'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
-GRANT ALL PRIVILEGES ON * . * TO 'nodeclient'@'localhost';
+GRANT ALL PRIVILEGES ON *.* TO 'nodeclient'@'localhost';
 flush privileges;
 ```
 

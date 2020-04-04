@@ -24,5 +24,8 @@
     "mysql": "^2.18.1",
     "nodemon": "^2.0.2",
     "req-flash": "0.0.3"
+  },
+  "directories": {
+    "example": "examples"
   }
 }
